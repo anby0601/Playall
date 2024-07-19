@@ -1,4 +1,13 @@
-<p align='center'>
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=capsule%20render&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Decorate%20GitHub%20Profile%20or%20any%20Repo%20like%20me!&descAlignY=51&descAlign=62"/>
-</p>
+
+# PlayAll
+- 2024 1학기 한국공학대학교 모바일프로그래밍 9팀 팀프로젝트
+# 🔎 앱 소개
+- Android Studio 툴을 사용하여 Kotlin으로 피아노, 기타, 드럼을 구현 후 통합한 악기연주 앱입니다.
+# 🚩 진행 과정
+1. 총 3명의 팀원으로 구성
+2. Zoom 및 카카오톡으로 브레인스토밍을 통한 주제 선정
+3. 각자 구현하고 싶은 악기 선정 및 구현
+4. 일주일 간격으로 팀원들끼리 만나 지속적인 진행과정 공유 및 피드백
+5. 통합 및 리팩토링 반복
+6. 완성
 
