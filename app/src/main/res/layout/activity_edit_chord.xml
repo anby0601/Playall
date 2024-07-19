@@ -1,0 +1,945 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <!-- AppBarLayout을 사용하여 Toolbar를 포함 -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#333333"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- NestedScrollView를 사용하여 스크롤 가능한 내용 포함 -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 각 코드 그룹에 대한 GridLayout -->
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="C" />
+
+                <Button
+                    android:id="@+id/C"
+                    style="@style/ChordButtonStyle"
+                    android:text="C" />
+                <Button
+                    android:id="@+id/Cm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Cm" />
+                <Button
+                    android:id="@+id/C7"
+                    style="@style/ChordButtonStyle"
+                    android:text="C7" />
+                <Button
+                    android:id="@+id/Cm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Cm7" />
+                <Button
+                    android:id="@+id/CM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="CM7" />
+                <Button
+                    android:id="@+id/Cdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Cdim" />
+                <Button
+                    android:id="@+id/Csus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Csus4" />
+                <Button
+                    android:id="@+id/C6"
+                    style="@style/ChordButtonStyle"
+                    android:text="C6" />
+                <Button
+                    android:id="@+id/C9"
+                    style="@style/ChordButtonStyle"
+                    android:text="C9" />
+                <Button
+                    android:id="@+id/C11"
+                    style="@style/ChordButtonStyle"
+                    android:text="C11" />
+            </GridLayout>
+
+            <!-- 추가 코드 그룹들(Csharp, Db, ...)도 같은 구조로 추가 -->
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="C#" />
+
+                <Button
+                    android:id="@+id/Csharp"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#" />
+                <Button
+                    android:id="@+id/Csharpm"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#m" />
+                <Button
+                    android:id="@+id/Csharp7"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#7" />
+                <Button
+                    android:id="@+id/Csharpm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#m7" />
+                <Button
+                    android:id="@+id/CsharpM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#M7" />
+                <Button
+                    android:id="@+id/Csharpdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#dim" />
+                <Button
+                    android:id="@+id/Csharpsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#sus4" />
+                <Button
+                    android:id="@+id/Csharp6"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#6" />
+                <Button
+                    android:id="@+id/Csharp9"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#9" />
+                <Button
+                    android:id="@+id/Csharp11"
+                    style="@style/ChordButtonStyle"
+                    android:text="C#11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="Db" />
+
+                <Button
+                    android:id="@+id/Db"
+                    style="@style/ChordButtonStyle"
+                    android:text="Db" />
+                <Button
+                    android:id="@+id/Dbm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dbm" />
+                <Button
+                    android:id="@+id/Db7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Db7" />
+                <Button
+                    android:id="@+id/Dbm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dbm7" />
+                <Button
+                    android:id="@+id/DbM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="DbM7" />
+                <Button
+                    android:id="@+id/Dbdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dbdim" />
+                <Button
+                    android:id="@+id/Dbsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dbsus4" />
+                <Button
+                    android:id="@+id/Db6"
+                    style="@style/ChordButtonStyle"
+                    android:text="Db6" />
+                <Button
+                    android:id="@+id/Db9"
+                    style="@style/ChordButtonStyle"
+                    android:text="Db9" />
+                <Button
+                    android:id="@+id/Db11"
+                    style="@style/ChordButtonStyle"
+                    android:text="Db11" />
+            </GridLayout>
+
+            <!-- 추가 코드 그룹들(D, D#, Eb, E, F, F#, Gb, G, G#, Ab, A, A#, Bb, B)도 같은 구조로 추가 -->
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="D" />
+
+                <Button
+                    android:id="@+id/D"
+                    style="@style/ChordButtonStyle"
+                    android:text="D" />
+                <Button
+                    android:id="@+id/Dm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dm" />
+                <Button
+                    android:id="@+id/D7"
+                    style="@style/ChordButtonStyle"
+                    android:text="D7" />
+                <Button
+                    android:id="@+id/Dm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dm7" />
+                <Button
+                    android:id="@+id/DM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="DM7" />
+                <Button
+                    android:id="@+id/Ddim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ddim" />
+                <Button
+                    android:id="@+id/Dsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Dsus4" />
+                <Button
+                    android:id="@+id/D6"
+                    style="@style/ChordButtonStyle"
+                    android:text="D6" />
+                <Button
+                    android:id="@+id/D9"
+                    style="@style/ChordButtonStyle"
+                    android:text="D9" />
+                <Button
+                    android:id="@+id/D11"
+                    style="@style/ChordButtonStyle"
+                    android:text="D11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="D#" />
+
+                <Button
+                    android:id="@+id/Dsharp"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#" />
+                <Button
+                    android:id="@+id/Dsharpm"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#m" />
+                <Button
+                    android:id="@+id/Dsharp7"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#7" />
+                <Button
+                    android:id="@+id/Dsharpm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#m7" />
+                <Button
+                    android:id="@+id/DsharpM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#M7" />
+                <Button
+                    android:id="@+id/Dsharpdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#dim" />
+                <Button
+                    android:id="@+id/Dsharpsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#sus4" />
+                <Button
+                    android:id="@+id/Dsharp6"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#6" />
+                <Button
+                    android:id="@+id/Dsharp9"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#9" />
+                <Button
+                    android:id="@+id/Dsharp11"
+                    style="@style/ChordButtonStyle"
+                    android:text="D#11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="Eb" />
+
+                <Button
+                    android:id="@+id/Eb"
+                    style="@style/ChordButtonStyle"
+                    android:text="Eb" />
+                <Button
+                    android:id="@+id/Ebm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ebm" />
+                <Button
+                    android:id="@+id/Eb7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Eb7" />
+                <Button
+                    android:id="@+id/Ebm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ebm7" />
+                <Button
+                    android:id="@+id/EbM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="EbM7" />
+                <Button
+                    android:id="@+id/Ebdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ebdim" />
+                <Button
+                    android:id="@+id/Ebsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ebsus4" />
+                <Button
+                    android:id="@+id/Eb6"
+                    style="@style/ChordButtonStyle"
+                    android:text="Eb6" />
+                <Button
+                    android:id="@+id/Eb9"
+                    style="@style/ChordButtonStyle"
+                    android:text="Eb9" />
+                <Button
+                    android:id="@+id/Eb11"
+                    style="@style/ChordButtonStyle"
+                    android:text="Eb11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="E" />
+
+                <Button
+                    android:id="@+id/E"
+                    style="@style/ChordButtonStyle"
+                    android:text="E" />
+                <Button
+                    android:id="@+id/Em"
+                    style="@style/ChordButtonStyle"
+                    android:text="Em" />
+                <Button
+                    android:id="@+id/E7"
+                    style="@style/ChordButtonStyle"
+                    android:text="E7" />
+                <Button
+                    android:id="@+id/Em7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Em7" />
+                <Button
+                    android:id="@+id/EM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="EM7" />
+                <Button
+                    android:id="@+id/Edim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Edim" />
+                <Button
+                    android:id="@+id/Esus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Esus4" />
+                <Button
+                    android:id="@+id/E6"
+                    style="@style/ChordButtonStyle"
+                    android:text="E6" />
+                <Button
+                    android:id="@+id/E9"
+                    style="@style/ChordButtonStyle"
+                    android:text="E9" />
+                <Button
+                    android:id="@+id/E11"
+                    style="@style/ChordButtonStyle"
+                    android:text="E11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="F" />
+
+                <Button
+                    android:id="@+id/F"
+                    style="@style/ChordButtonStyle"
+                    android:text="F" />
+                <Button
+                    android:id="@+id/Fm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Fm" />
+                <Button
+                    android:id="@+id/F7"
+                    style="@style/ChordButtonStyle"
+                    android:text="F7" />
+                <Button
+                    android:id="@+id/Fm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Fm7" />
+                <Button
+                    android:id="@+id/FM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="FM7" />
+                <Button
+                    android:id="@+id/Fdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Fdim" />
+                <Button
+                    android:id="@+id/Fsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Fsus4" />
+                <Button
+                    android:id="@+id/F6"
+                    style="@style/ChordButtonStyle"
+                    android:text="F6" />
+                <Button
+                    android:id="@+id/F9"
+                    style="@style/ChordButtonStyle"
+                    android:text="F9" />
+                <Button
+                    android:id="@+id/F11"
+                    style="@style/ChordButtonStyle"
+                    android:text="F11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="F#" />
+
+                <Button
+                    android:id="@+id/Fsharp"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#" />
+                <Button
+                    android:id="@+id/Fsharpm"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#m" />
+                <Button
+                    android:id="@+id/Fsharp7"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#7" />
+                <Button
+                    android:id="@+id/Fsharpm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#m7" />
+                <Button
+                    android:id="@+id/FsharpM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#M7" />
+                <Button
+                    android:id="@+id/Fsharpdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#dim" />
+                <Button
+                    android:id="@+id/Fsharpsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#sus4" />
+                <Button
+                    android:id="@+id/Fsharp6"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#6" />
+                <Button
+                    android:id="@+id/Fsharp9"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#9" />
+                <Button
+                    android:id="@+id/Fsharp11"
+                    style="@style/ChordButtonStyle"
+                    android:text="F#11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="Gb" />
+
+                <Button
+                    android:id="@+id/Gb"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gb" />
+                <Button
+                    android:id="@+id/Gbm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gbm" />
+                <Button
+                    android:id="@+id/Gb7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gb7" />
+                <Button
+                    android:id="@+id/Gbm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gbm7" />
+                <Button
+                    android:id="@+id/GbM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="GbM7" />
+                <Button
+                    android:id="@+id/Gbdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gbdim" />
+                <Button
+                    android:id="@+id/Gbsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gbsus4" />
+                <Button
+                    android:id="@+id/Gb6"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gb6" />
+                <Button
+                    android:id="@+id/Gb9"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gb9" />
+                <Button
+                    android:id="@+id/Gb11"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gb11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="G" />
+
+                <Button
+                    android:id="@+id/G"
+                    style="@style/ChordButtonStyle"
+                    android:text="G" />
+                <Button
+                    android:id="@+id/Gm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gm" />
+                <Button
+                    android:id="@+id/G7"
+                    style="@style/ChordButtonStyle"
+                    android:text="G7" />
+                <Button
+                    android:id="@+id/Gm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gm7" />
+                <Button
+                    android:id="@+id/GM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="GM7" />
+                <Button
+                    android:id="@+id/Gdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gdim" />
+                <Button
+                    android:id="@+id/Gsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Gsus4" />
+                <Button
+                    android:id="@+id/G6"
+                    style="@style/ChordButtonStyle"
+                    android:text="G6" />
+                <Button
+                    android:id="@+id/G9"
+                    style="@style/ChordButtonStyle"
+                    android:text="G9" />
+                <Button
+                    android:id="@+id/G11"
+                    style="@style/ChordButtonStyle"
+                    android:text="G11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="G#" />
+
+                <Button
+                    android:id="@+id/Gsharp"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#" />
+                <Button
+                    android:id="@+id/Gsharpm"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#m" />
+                <Button
+                    android:id="@+id/Gsharp7"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#7" />
+                <Button
+                    android:id="@+id/Gsharpm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#m7" />
+                <Button
+                    android:id="@+id/GsharpM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#M7" />
+                <Button
+                    android:id="@+id/Gsharpdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#dim" />
+                <Button
+                    android:id="@+id/Gsharpsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#sus4" />
+                <Button
+                    android:id="@+id/Gsharp6"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#6" />
+                <Button
+                    android:id="@+id/Gsharp9"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#9" />
+                <Button
+                    android:id="@+id/Gsharp11"
+                    style="@style/ChordButtonStyle"
+                    android:text="G#11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="Ab" />
+
+                <Button
+                    android:id="@+id/Ab"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ab" />
+                <Button
+                    android:id="@+id/Abm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Abm" />
+                <Button
+                    android:id="@+id/Ab7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ab7" />
+                <Button
+                    android:id="@+id/Abm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Abm7" />
+                <Button
+                    android:id="@+id/AbM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="AbM7" />
+                <Button
+                    android:id="@+id/Abdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Abdim" />
+                <Button
+                    android:id="@+id/Absus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Absus4" />
+                <Button
+                    android:id="@+id/Ab6"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ab6" />
+                <Button
+                    android:id="@+id/Ab9"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ab9" />
+                <Button
+                    android:id="@+id/Ab11"
+                    style="@style/ChordButtonStyle"
+                    android:text="Ab11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="A" />
+
+                <Button
+                    android:id="@+id/A"
+                    style="@style/ChordButtonStyle"
+                    android:text="A" />
+                <Button
+                    android:id="@+id/Am"
+                    style="@style/ChordButtonStyle"
+                    android:text="Am" />
+                <Button
+                    android:id="@+id/A7"
+                    style="@style/ChordButtonStyle"
+                    android:text="A7" />
+                <Button
+                    android:id="@+id/Am7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Am7" />
+                <Button
+                    android:id="@+id/AM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="AM7" />
+                <Button
+                    android:id="@+id/Adim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Adim" />
+                <Button
+                    android:id="@+id/Asus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Asus4" />
+                <Button
+                    android:id="@+id/A6"
+                    style="@style/ChordButtonStyle"
+                    android:text="A6" />
+                <Button
+                    android:id="@+id/A9"
+                    style="@style/ChordButtonStyle"
+                    android:text="A9" />
+                <Button
+                    android:id="@+id/A11"
+                    style="@style/ChordButtonStyle"
+                    android:text="A11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="A#" />
+
+                <Button
+                    android:id="@+id/Asharp"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#" />
+                <Button
+                    android:id="@+id/Asharpm"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#m" />
+                <Button
+                    android:id="@+id/Asharp7"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#7" />
+                <Button
+                    android:id="@+id/Asharpm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#m7" />
+                <Button
+                    android:id="@+id/AsharpM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#M7" />
+                <Button
+                    android:id="@+id/Asharpdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#dim" />
+                <Button
+                    android:id="@+id/Asharpsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#sus4" />
+                <Button
+                    android:id="@+id/Asharp6"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#6" />
+                <Button
+                    android:id="@+id/Asharp9"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#9" />
+                <Button
+                    android:id="@+id/Asharp11"
+                    style="@style/ChordButtonStyle"
+                    android:text="A#11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="Bb" />
+
+                <Button
+                    android:id="@+id/Bb"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bb" />
+                <Button
+                    android:id="@+id/Bbm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bbm" />
+                <Button
+                    android:id="@+id/Bb7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bb7" />
+                <Button
+                    android:id="@+id/Bbm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bbm7" />
+                <Button
+                    android:id="@+id/BbM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="BbM7" />
+                <Button
+                    android:id="@+id/Bbdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bbdim" />
+                <Button
+                    android:id="@+id/Bbsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bbsus4" />
+                <Button
+                    android:id="@+id/Bb6"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bb6" />
+                <Button
+                    android:id="@+id/Bb9"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bb9" />
+                <Button
+                    android:id="@+id/Bb11"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bb11" />
+            </GridLayout>
+
+            <GridLayout
+                style="@style/ChordGroupStyle">
+
+                <TextView
+                    style="@style/ChordTextViewStyle"
+                    android:text="B" />
+
+                <Button
+                    android:id="@+id/B"
+                    style="@style/ChordButtonStyle"
+                    android:text="B" />
+                <Button
+                    android:id="@+id/Bm"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bm" />
+                <Button
+                    android:id="@+id/B7"
+                    style="@style/ChordButtonStyle"
+                    android:text="B7" />
+                <Button
+                    android:id="@+id/Bm7"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bm7" />
+                <Button
+                    android:id="@+id/BM7"
+                    style="@style/ChordButtonStyle"
+                    android:text="BM7" />
+                <Button
+                    android:id="@+id/Bdim"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bdim" />
+                <Button
+                    android:id="@+id/Bsus4"
+                    style="@style/ChordButtonStyle"
+                    android:text="Bsus4" />
+                <Button
+                    android:id="@+id/B6"
+                    style="@style/ChordButtonStyle"
+                    android:text="B6" />
+                <Button
+                    android:id="@+id/B9"
+                    style="@style/ChordButtonStyle"
+                    android:text="B9" />
+                <Button
+                    android:id="@+id/B11"
+                    style="@style/ChordButtonStyle"
+                    android:text="B11" />
+            </GridLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- 고정된 하단 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/fixed_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:layout_gravity="bottom">
+
+        <!-- 왼쪽에 위치할 Button들을 GridLayout으로 구성 -->
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:columnCount="4"
+            android:rowCount="2"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText1"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText2"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText3"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText4"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText5"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText6"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText7"/>
+            <TextView
+                style="@style/SelectedTextViewStyle"
+                android:visibility="gone"
+                android:text="-"
+                android:id="@+id/chordText8"/>
+        </GridLayout>
+
+
+        <!-- 오른쪽에 위치할 Button -->
+        <ImageButton
+            android:id="@+id/editButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/edit_button"
+            android:backgroundTint="#00000000"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

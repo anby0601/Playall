@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drum_background"
+    android:orientation="vertical"
+    tools:context=".DrumActivity">
+
+    <ImageButton
+    android:id="@+id/kick_drum1"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@null"
+    android:scaleType="fitXY"
+    android:src="@drawable/kick_drum" />
+
+    <ImageButton
+        android:id="@+id/kick_drum2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/kick_drum" />
+
+    <ImageButton
+        android:id="@+id/snare_drum"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/snare_drum" />
+
+    <ImageButton
+        android:id="@+id/tom_drum1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/tom_drum" />
+
+    <ImageButton
+        android:id="@+id/tom_drum2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/tom_drum" />
+
+    <ImageButton
+        android:id="@+id/tom_drum3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/tom_drum" />
+
+    <ImageButton
+        android:id="@+id/floor_drum"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/floor_drum" />
+
+
+    <ImageButton
+        android:id="@+id/crash_drum1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/crash_drum" />
+
+    <ImageButton
+        android:id="@+id/crash_drum2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/crash_drum" />
+
+    <ImageButton
+        android:id="@+id/splash_drum"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_drum" />
+
+    <ImageButton
+        android:id="@+id/ride_drum"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ride_drum" />
+
+    <ImageButton
+        android:id="@+id/open_drum"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/open_drum" />
+
+    <ImageButton
+        android:id="@+id/close_drum"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_drum" />
+
+
+</LinearLayout>

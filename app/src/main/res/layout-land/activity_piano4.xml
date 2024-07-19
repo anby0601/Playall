@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_piano"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="false"
+    android:scrollbarTrackHorizontal="@drawable/piano_keyboard"
+    android:scrollbarThumbHorizontal="@drawable/scroll_thumb_piano">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A0"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B0"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C1"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D1"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E1"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F1"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G1"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A1"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B1"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C2"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D2"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E2"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F2"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G2"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A2"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B2"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C3"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D3"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E3"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F3"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G3"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A3"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B3"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C4"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D4"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E4"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F4"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G4"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A4"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B4"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C5"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D5"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E5"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F5"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G5"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A5"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B5"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C6"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D6"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E6"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F6"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G6"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A6"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B6"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C7"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D7"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/E7"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F7"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G7"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A7"
+                style="@style/white_button_style4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/B7"
+                style="@style/white_button_style4"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C8"
+                style="@style/white_button_style4"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="32dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A0_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C1_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D1_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F1_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G1_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A1_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C2_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D2_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F2_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G2_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A2_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C3_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D3_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F3_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G3_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A3_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C4_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D4_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F4_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G4_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A4_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C5_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D5_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F5_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G5_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A5_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C6_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D6_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F6_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G6_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A6_sharp"
+                style="@style/black_key_style4"/>
+
+
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C7_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="24dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/D7_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="48dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/F7_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/G7_sharp"
+                style="@style/black_key_style4"/>
+            <View
+                android:layout_width="20dp"
+                style="@style/transparent_view_style"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/A7_sharp"
+                style="@style/black_key_style4"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</HorizontalScrollView>
